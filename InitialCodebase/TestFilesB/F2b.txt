@@ -1,0 +1,6 @@
+~            val   LA  Phx  Por   SF  Sea
+LosAngeles   34.1    ~  574 1329  559 1544
+Phoenix      33.4  574    ~ 1618 1050 1792
+Portland     45.5 1392 1618    ~  861  233
+SanFrancisco 37.8  559 1050  861    ~ 1092
+Seattle      47.6 1544 1792  233 1092    ~

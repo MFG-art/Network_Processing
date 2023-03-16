@@ -1,0 +1,5 @@
+~             val     C    D    F    M
+Chicago       41.9    ~ 1004  967  398
+Denver        39.7 1004    ~  794  924
+FortWorth     32.8  967  794    ~  944
+Minneapolis   45.0  398  924  944    ~

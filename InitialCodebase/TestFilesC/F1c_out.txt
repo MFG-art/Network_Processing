@@ -1,0 +1,34 @@
+DFS of graph:
+Node	Disc	Finish
+B	1	10
+D	2	9
+E	3	8
+C	4	7
+A	5	6
+
+Edge Classification:
+A->B	Back
+A->C	Back
+A->E	Back
+B->A	Forward
+B->C	Forward
+B->D	Tree
+C->A	Tree
+D->A	Forward
+D->C	Forward
+D->E	Tree
+E->B	Back
+E->C	Tree
+E->D	Back
+
+DFS of complementary graph:
+Node	Disc	Finish
+B	1	10
+A	2	9
+D	3	6
+E	4	5
+C	7	8
+
+Strongly Connected Components: 1
+BADEC
+

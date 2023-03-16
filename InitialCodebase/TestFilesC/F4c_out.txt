@@ -1,0 +1,43 @@
+DFS of graph:
+Node	Disc	Finish
+S	1	10
+Z	2	9
+W	3	6
+X	4	5
+Y	7	8
+T	11	16
+V	12	13
+U	14	15
+
+Edge Classification:
+S->W	Forward
+S->Z	Tree
+T->U	Tree
+T->V	Tree
+U->T	Back
+U->V	Back
+V->S	Cross
+V->W	Cross
+W->X	Tree
+X->Z	Back
+Y->X	Back
+Z->W	Tree
+Z->Y	Tree
+
+DFS of complementary graph:
+Node	Disc	Finish
+T	1	4
+U	2	3
+V	5	6
+S	7	8
+Z	9	16
+X	10	15
+W	11	12
+Y	13	14
+
+Strongly Connected Components: 4
+TU
+V
+S
+ZXWY
+

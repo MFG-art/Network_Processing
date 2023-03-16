@@ -1,0 +1,373 @@
+DFS of graph:
+Node	Disc	Finish
+A	1	98
+a	2	97
+O	3	96
+f	4	95
+n	5	94
+K	6	93
+q	7	92
+z	8	91
+k	9	90
+R	10	17
+r	11	16
+p	12	15
+L	13	14
+y	18	89
+Z	19	88
+b	20	87
+g	21	86
+H	22	85
+V	23	84
+e	24	83
+I	25	76
+B	26	75
+J	27	74
+c	28	73
+E	29	72
+T	30	71
+Y	31	32
+D	33	70
+o	34	69
+U	35	68
+X	36	67
+x	37	66
+v	38	65
+w	39	64
+Q	40	63
+h	41	62
+N	42	61
+t	43	60
+M	44	59
+W	45	46
+F	47	58
+j	48	57
+t	49	56
+u	50	55
+P	51	54
+m	52	53
+G	77	82
+d	78	81
+C	79	80
+
+Edge Classification:
+A->a	Tree
+A->F	Forward
+A->O	Forward
+A->W	Forward
+X->U	Back
+X->Z	Back
+X->x	Tree
+X->y	Back
+X->w	Forward
+a->A	Back
+a->L	Forward
+a->O	Tree
+a->r	Forward
+B->J	Tree
+B->g	Back
+B->I	Back
+B->Y	Forward
+B->T	Forward
+J->B	Back
+J->b	Back
+J->c	Tree
+J->D	Forward
+J->g	Back
+J->I	Back
+J->T	Forward
+b->J	Forward
+b->C	Forward
+b->D	Forward
+b->U	Forward
+b->g	Tree
+b->Z	Back
+C->b	Back
+C->d	Back
+C->g	Back
+C->H	Back
+C->q	Back
+C->y	Back
+C->z	Back
+C->k	Back
+C->V	Back
+c->J	Back
+c->D	Forward
+c->E	Tree
+c->o	Forward
+c->Y	Forward
+c->T	Forward
+D->J	Back
+D->b	Back
+D->c	Back
+D->U	Forward
+D->o	Tree
+D->T	Back
+d->C	Tree
+d->G	Back
+d->g	Back
+d->H	Back
+d->V	Back
+E->c	Back
+E->o	Forward
+E->Y	Forward
+E->T	Tree
+e->G	Tree
+e->I	Tree
+e->V	Back
+F->A	Back
+F->M	Back
+F->j	Tree
+F->t	Forward
+f->M	Forward
+f->n	Tree
+f->O	Back
+f->r	Forward
+f->z	Forward
+f->t	Forward
+f->K	Forward
+f->W	Forward
+U->X	Tree
+U->b	Back
+U->D	Back
+U->o	Back
+U->x	Forward
+G->d	Tree
+G->e	Back
+G->V	Back
+g->B	Forward
+g->J	Forward
+g->b	Back
+g->C	Forward
+g->d	Forward
+g->H	Tree
+g->I	Forward
+H->C	Forward
+H->d	Forward
+H->g	Back
+H->I	Forward
+H->V	Tree
+h->Q	Back
+h->q	Back
+h->v	Back
+h->N	Tree
+h->y	Back
+h->t	Forward
+h->K	Back
+I->B	Tree
+I->J	Forward
+I->e	Back
+I->g	Back
+I->H	Back
+I->V	Back
+L->a	Back
+L->r	Back
+L->p	Back
+Q->h	Tree
+Q->q	Back
+Q->y	Back
+Q->w	Back
+Z->X	Forward
+Z->b	Tree
+Z->x	Forward
+Z->y	Back
+u->P	Tree
+u->t	Back
+M->F	Tree
+M->f	Back
+M->N	Back
+M->t	Back
+M->W	Tree
+M->j	Forward
+m->v	Back
+m->N	Back
+m->P	Back
+m->w	Back
+m->j	Back
+q->C	Forward
+q->h	Forward
+q->Q	Forward
+q->n	Back
+q->y	Forward
+q->z	Tree
+q->K	Back
+q->k	Forward
+v->h	Forward
+v->m	Forward
+v->x	Back
+v->N	Forward
+v->w	Tree
+o->c	Back
+o->D	Back
+o->E	Back
+o->U	Tree
+x->X	Back
+x->U	Back
+x->Z	Back
+x->v	Tree
+x->y	Back
+x->w	Forward
+N->h	Back
+N->M	Forward
+N->m	Forward
+N->v	Back
+N->P	Forward
+N->t	Tree
+N->w	Back
+N->j	Forward
+n->f	Back
+n->q	Forward
+n->R	Forward
+n->r	Forward
+n->z	Forward
+n->K	Tree
+Y->B	Back
+Y->c	Back
+Y->E	Back
+Y->T	Back
+O->A	Back
+O->a	Back
+O->f	Tree
+O->r	Forward
+O->W	Forward
+P->u	Back
+P->m	Tree
+P->N	Back
+P->j	Back
+R->n	Back
+R->r	Tree
+R->z	Back
+R->k	Back
+R->p	Forward
+r->a	Back
+r->f	Back
+r->L	Forward
+r->n	Back
+r->O	Back
+r->R	Back
+r->p	Tree
+y->X	Forward
+y->C	Forward
+y->h	Forward
+y->Q	Forward
+y->Z	Tree
+y->q	Back
+y->x	Forward
+y->K	Back
+y->k	Back
+y->w	Forward
+z->C	Forward
+z->f	Back
+z->q	Back
+z->n	Back
+z->R	Forward
+z->K	Back
+z->k	Tree
+t->f	Back
+t->h	Back
+t->M	Tree
+t->N	Back
+t->K	Back
+K->f	Back
+K->h	Forward
+K->q	Tree
+K->n	Back
+K->y	Forward
+K->z	Forward
+K->t	Forward
+k->C	Forward
+k->q	Back
+k->R	Tree
+k->y	Tree
+k->z	Back
+T->B	Back
+T->J	Back
+T->c	Back
+T->D	Tree
+T->E	Back
+T->Y	Tree
+V->C	Forward
+V->d	Forward
+V->e	Tree
+V->G	Forward
+V->H	Back
+V->I	Forward
+W->A	Back
+W->f	Back
+W->M	Back
+W->O	Back
+w->X	Back
+w->Q	Tree
+w->m	Forward
+w->v	Back
+w->x	Back
+w->N	Forward
+w->y	Back
+j->F	Back
+j->M	Back
+j->m	Forward
+j->N	Back
+j->P	Forward
+j->t	Tree
+p->L	Tree
+p->R	Back
+p->r	Back
+t->F	Back
+t->u	Tree
+t->j	Back
+
+DFS of complementary graph:
+Node	Disc	Finish
+A	1	98
+a	2	97
+O	3	96
+f	4	95
+n	5	94
+K	6	93
+q	7	92
+z	8	91
+k	9	90
+R	10	17
+r	11	16
+p	12	15
+L	13	14
+y	18	89
+Z	19	88
+b	20	87
+g	21	86
+H	22	85
+V	23	84
+e	24	83
+I	25	76
+B	26	75
+J	27	74
+c	28	73
+E	29	72
+T	30	71
+Y	31	32
+D	33	70
+o	34	69
+U	35	68
+X	36	67
+x	37	66
+v	38	65
+w	39	64
+Q	40	63
+h	41	62
+N	42	61
+t	43	60
+M	44	59
+W	45	46
+F	47	58
+j	48	57
+t	49	56
+u	50	55
+P	51	54
+m	52	53
+G	77	82
+d	78	81
+C	79	80
+
+Strongly Connected Components: 1
+AaOfnKqzkRrpLyZbgHVeIBJcETYDoUXxvwQhNtMWFjtuPmGdC
+
